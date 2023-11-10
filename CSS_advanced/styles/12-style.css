@@ -28,7 +28,7 @@ a {
 .section-title {
     font-family: var(--font-family-title);
     font-size: var(--font-size-xx-large);
-    line-height: var(--line-weight-bold);
+    font-weight: var(--line-weight-bold);
     margin: var(--section-title-margin);
     color: var(--section-title-color);
 }
