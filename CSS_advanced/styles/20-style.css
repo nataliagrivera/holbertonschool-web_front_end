@@ -110,6 +110,12 @@ a:active {
     margin: var(--section-tagline-margin);
 }
 
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 u1.row {
     margin: 0;
     padding: 0;
