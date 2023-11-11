@@ -1,12 +1,36 @@
-a[href]:not([href=""]):visited {
-    color: #161616;
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    color: var(--text-color);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-base);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-bold);
+}
+
+a:link {
+    color: var(--text-color);
     text-decoration: none;
+}
+
+a:visited {
     font-style: italic;
+}
+
+a:hover {
     text-decoration: underline;
 }
 
-a[href]:not([href=""]):hover {
-    text-decoration: underline;
+a:active {
+    background-color: var(--color-light-grey);
 }
 
 .visually-hidden {
@@ -17,6 +41,10 @@ a[href]:not([href=""]):hover {
     color: var(--color-primary);
 }
 
+.section-header {
+    text-align: var(--section-header-align);
+}
+
 .section-title {
     font-family: var(--font-family-title);
     font-size: var(--font-size-xx-large);
@@ -24,6 +52,7 @@ a[href]:not([href=""]):hover {
     margin: var(--section-title-margin);
     color: var(--section-title-color);
 }
+
 .section-tagline {
     color: var(--color-primary);
     font-family: var(--font-family-title);
@@ -31,11 +60,11 @@ a[href]:not([href=""]):hover {
     font-weight: var(--font-weight-bold);
 }
 
-:root { 
-    --color-primary: #d73953;
+:root {
+    --color-primary: #D73953;
     --color-black: #090909;
-    --color-white: #ffffff;
-    --color-light-grey:#f3f3f3;
+    --color-white: #FFFFFF;
+    --color-light-grey: #F3F3F3;
     --color-dark-grey: #353535;
     --text-color: var(--color-black);
     --font-family-base: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -50,18 +79,8 @@ a[href]:not([href=""]):hover {
     --line-height-small: 1.2;
     --line-height-base: 1.5;
     --line-height-big: 1.8;
-    --section-header-align: left;
     --section-header-align: center;
     --section-tagline-transform: uppercase;
     --section-title-margin: 0;
-    --section-title-color: var(--color-black)
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-family-title);
-    font-weight: var(--font-weight-bold);
-}
-
-.section-header {
-    text-align: var(--section-header-align);
+    --section-title-color: var(--color-black);
 }
